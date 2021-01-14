@@ -1,12 +1,13 @@
+import { AddDigimonPageComponent } from './add-digimon-page.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AddDigimonPageRoutingModule } from './add-digimon-page-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [AddDigimonPageComponent],
   imports: [
     CommonModule,
     AddDigimonPageRoutingModule,

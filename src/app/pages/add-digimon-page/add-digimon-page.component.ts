@@ -9,8 +9,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class AddDigimonPageComponent implements OnInit {
   addDigimonForm: any;
   constructor(private formBuilder: FormBuilder) { }
-  levelList = ['Fresh', 'Rookie' ]
-
+  levelList = ['Fresh', 'Rookie', 'Champion', 'Ultimate', 'Mega' ]
+  imageUrl;
   ngOnInit(): void {
     this.addDigimonForm = this.formBuilder.group({
       name:['', [Validators.required]],
@@ -21,6 +21,34 @@ export class AddDigimonPageComponent implements OnInit {
     addDigimon(){
       console.log(this.addDigimonForm.value)
     }
+
+    file(file) {​​
+
+      return new Promise((res, rej) => {​​
+  
+        const reader = new FileReader();
+  
+        reader.onload = e => res(e.target.result);
+  
+        reader.onerror = e => rej(e);
+  
+        reader.readAsDataURL(file);
+  
+      }​​);
+  
+    }​​;
+  
+  
+  
+    async preview(event) {​​
+  
+      const file = event.target.files[0];
+  
+      const url = await this.file(file);
+  
+      this.imageUrl = url;
+  
+    }​​
   }
 
 

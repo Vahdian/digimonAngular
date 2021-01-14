@@ -10,7 +10,6 @@ import { AddDigimonPageComponent } from './pages/add-digimon-page/add-digimon-pa
 @NgModule({
   declarations: [
     AppComponent,
-    AddDigimonPageComponent,
   ],
   imports: [
     BrowserModule,

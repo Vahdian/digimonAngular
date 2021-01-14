@@ -15,5 +15,4 @@ export class DigimonsPageComponent implements OnInit {
     this.digimons = digimons;
   });
   }
-
 }
