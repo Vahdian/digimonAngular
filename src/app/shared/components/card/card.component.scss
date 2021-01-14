@@ -1,0 +1,10 @@
+.digimonCards{
+    border-radius: 500px;
+    border: 10px solid black;
+    max-width: 100%;
+
+    &:hover{
+        border: 10px solid rgb(224, 224, 224);
+    }
+}
+
