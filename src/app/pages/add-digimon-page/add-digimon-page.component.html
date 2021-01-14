@@ -1,0 +1,14 @@
+<form [formGroup]="addDigimon()" (ngSubmit)="addDigimon()">
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name">
+
+    <label for="level">Level</label>
+    <select formControlName="level" id="level">
+        <option value="{{level}}" *ngFor="let level of levelList">{{level}}</option>
+    </select>
+
+    <label for="img">Image</label>
+    <input id="img" type="file" formControlName="img">
+
+    <button>Guardar</button>
+</form> 

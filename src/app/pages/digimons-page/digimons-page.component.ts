@@ -13,7 +13,7 @@ export class DigimonsPageComponent implements OnInit {
   ngOnInit(): void {
   this.digimonsService.getDigimons().subscribe(digimons =>{
     this.digimons = digimons;
-  })
+  });
   }
 
 }

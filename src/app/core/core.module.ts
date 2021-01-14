@@ -8,7 +8,8 @@ import { RouterModule } from '@angular/router';
   declarations: [MenuComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    
   ],
   exports: [MenuComponent]
 })
